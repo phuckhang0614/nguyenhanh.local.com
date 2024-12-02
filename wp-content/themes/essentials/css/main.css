@@ -1,4 +1,4 @@
-/* Begin Contact Form*/
+ Begin Contact Form*/
 
 select.form-control {
   text-indent: 0px!important;
@@ -236,5 +236,151 @@ h3.wp-block-heading {
 .elementor-post__title {
     min-height: 70px;
 }
+.elementor-posts .elementor-post__title {
+  font-size: 18px;
+  word-break: break-word;
+}
 /* End Customize Post With Elementor*/
 /*end post liên quan*/
+
+/*Begin Project related*/
+.nguyenhanh_project-related-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition-property: background,border,-webkit-box-shadow;
+    transition-property: background,border,-webkit-box-shadow;
+    -o-transition-property: background,border,box-shadow;
+    transition-property: background,border,box-shadow;
+    transition-property: background,border,box-shadow,-webkit-box-shadow;
+    -webkit-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+/*.nguyenhanh_post_related-brand {
+    background-color: #120551;
+    margin: 20px 35px 20px 20px;
+    right: 0;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 12px;
+    padding: .6em 1.2em;
+    line-height: 1;
+    font-weight: 400;
+    border-radius: 999px;
+}*/
+.nguyenhanh_project_related-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: 100%;
+    display: var(--item-display,block);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.nguyenhanh_project_related-title {
+    font-family: "Mulish_NH", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    min-height: 55px;
+}
+.nguyenhanh_project_related-title a {
+    color: var( --e-global-color-primary )!important;
+    font-size: 18px!important;
+    word-wrap: break-word;
+    letter-spacing: inherit;
+}
+.nguyenhanh_project_related-excerpt {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    -webkit-box-flex: var(--read-more-alignment,0);
+    -ms-flex-positive: var(--read-more-alignment,0);
+    flex-grow: var(--read-more-alignment,0);
+    min-height: 80px;
+}
+.nguyenhanh_project_related-excerpt p {
+    color: #000;
+    font-family: "Mulish_NH", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.nguyenhanh-project_related-thumbnail-link {
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.nguyenhanh-project_related-thumbnail-img {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.nguyenhanh-project_related_card {
+    background-color: #F8F9FA;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    border: 0 solid #818a91;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    display: flex;
+}
+
+.nguyenhanh-project_related-read-more {
+    font-family: "Mulish_NH", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+    color: #28620B;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: var( --e-global-color-primary )!important;
+}
+.nguyenhanh-project_related_heading {
+    color: #28620B !important;
+    text-align: center;
+    font-family: "Mulish_NH", Sans-serif !important;
+    font-weight: 700;
+    font-size: 30px!important;
+    padding: 20px;
+}
+/*End Customize Related Post*/
+
+/* Begin Customize Post With Elementor */
+.elementor-post__excerpt {
+    min-height: 105px;
+    text-align: justify;
+}
+.elementor-post__title {
+    min-height: 70px;
+}
+/* End Customize Post With Elementor*/
+/*end project liên quan

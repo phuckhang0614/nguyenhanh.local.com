@@ -695,3 +695,7 @@ if ( class_exists( 'OCDI_Plugin' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Tích hợp Module Project
+require get_stylesheet_directory() . '/inc/wecustommodules/projects/singleproject.php';
+require get_stylesheet_directory() . '/inc/wecustommodules/projects/categoryproject.php';
