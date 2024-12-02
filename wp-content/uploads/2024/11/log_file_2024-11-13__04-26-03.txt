@@ -1,0 +1,31 @@
+
+---Downloaded files---
+The import files for: Business Elementor were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://nguyenhanh.local.com
+Data file = D:\xampp74\www\nguyenhanh.local.com/wp-content/uploads/2024/11/demo-content-import-file_2024-11-13__04-26-03.xml
+Widget file = D:\xampp74\www\nguyenhanh.local.com/wp-content/uploads/2024/11/demo-widgets-import-file_2024-11-13__04-26-03.json
+Customizer file = not defined!
+Redux files:
+pix_options -> D:\xampp74\www\nguyenhanh.local.com/wp-content/themes/essentials/inc/demo-content/sites/business/business-elementor-options.json 
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+PixFort Search - Search - Imported
+PixFort Promo Box - Call to action - Imported
+Tag Cloud - No Title - Imported
+PixFort Recent Posts - Recent Posts - Imported
+PixFort Categories - Categories - Imported
+PixFort Social Links - Social Links - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: pix_options finished successfully!
