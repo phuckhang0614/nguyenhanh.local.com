@@ -41,7 +41,8 @@ if(!empty(pix_get_option('pix-footer'))){
 	$footer = pix_get_option('pix-footer');
 }
 
-$pagePostTypes = array('page', 'post', 'portfolio');
+//Thêm post_type vào đây sau khi khởi tạo bất kì post_type nào
+$pagePostTypes = array('page', 'post', 'portfolio', 'project', 'sauna');
 $pagePostTypes = apply_filters( 'pixfort_page_options_post_types', $pagePostTypes );
 if(in_array(get_post_type(), $pagePostTypes) && get_post_meta( get_the_ID(), 'pix-page-footer', true )){
 	$footer = get_post_meta( get_the_ID(), 'pix-page-footer', true );

@@ -146,10 +146,25 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
 			?>
         </div>
 
- <!-- Begin Post related -->
+        <!-- Begin Change Language -->
+        <?php 
+        if( ICL_LANGUAGE_CODE == 'en' )
+            { 
+              $lbTitlePostOther ='Get the most recent news';
+              $lbSeeDetail = 'View more';
+            }
+          else
+            {
+              $lbTitlePostOther ='Bài viết liên quan';
+              $lbSeeDetail = 'Xem chi tiết';
+            }
+        ?>
+        <!-- End Change Language -->
+
+        <!-- Begin Post related -->
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
-                    <h2 class="nguyenhanh-post_related_heading">Bài viết liên quan</h2> 
+                    <h2 class="nguyenhanh-post_related_heading"><?php echo $lbTitlePostOther ?></h2>
                 </div>
                 <?php
                     $html = '';
@@ -168,9 +183,13 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
                                     $html .= '<article class="nguyenhanh_post-related-article" >';
                                     //
                                     $postId = get_the_ID();
+
                                     $postTitle = get_the_title();
+                                    $postTitle_trim = wp_trim_words($postTitle, 4);// Đặt số từ mong muốn, ví dụ: 30 từ
+
                                     $postUrl = get_permalink();
                                     $postAvatar = get_the_post_thumbnail_url();
+                                    
                                     $postExcerpt = get_the_excerpt();
                                     //
                                     $featured_image_full = get_the_post_thumbnail($postId, 'full', array('class' => 'attachment-full size-full'));
@@ -191,8 +210,8 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
                                     //
                                     $html .= '<div class="nguyenhanh_post_related-text">';
                                     $html .= '<h3 class="nguyenhanh_post_related-title">';
-                                    $html .= '<a href="'.$postUrl.'" alt="'.$postTitle.'" title="'.$postTitle.'">';
-                                    $html .= $postTitle;
+                                    $html .= '<a href="'.$postUrl.'" alt="'.$postTitle_trim.'" title="'.$postTitle_trim.'">';
+                                    $html .= $postTitle_trim;
                                     $html .= '</h3>';
                                     $html .= '</a>';
                                     //
@@ -208,7 +227,7 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
                                     $html .= '</p>';
                                     $html .= '</div>';
                                     $html .= '<a class="nguyenhanh-post_related-read-more" href="'.$postUrl.'" alt="'.$postTitle.'" title="'.$postTitle.'">';
-                                    $html .= 'Xem thêm';
+                                    $html .= $lbSeeDetail;
                                     $html .= '</a>';
                                     $html .= '</div>';
                                     //

@@ -1,48 +1,50 @@
 /* Begin Contact Form*/
 
 select.form-control {
-  text-indent: 0px!important;
+    text-indent: 0px!important;
 }
 
 .contactform-label {
-  font-family: "Mulish_NH", sans-serif!important;
-  font-weight: bold;  
-  font-size: 16px;
+    font-family: "Mulish_NH", sans-serif!important;
+    font-weight: bold;  
+    font-size: 16px;
 }
 
 #contactform_name_193d41d   {
-  font-family: "Mulish_NH", sans-serif;
-  font-size: 16px;
-  color: #000; 
-  border: 1px solid #8f8f8f;
+    font-family: "Mulish_NH", sans-serif;
+    font-size: 16px;
+    color: #000; 
+    border: 1px solid #8f8f8f;
 }
 
 #contactform_phone_193d41d {
-  font-family: "Mulish_NH", sans-serif;
-  font-size: 16px;
-  color: #000; 
-  border: 1px solid #8f8f8f;
+    font-family: "Mulish_NH", sans-serif;
+    font-size: 16px;
+    color: #000; 
+    border: 1px solid #8f8f8f;
 }
 
 #contactform_email_193d41d {
-  font-family: "Mulish_NH", sans-serif;
-  font-size: 16px;
-  color: #000; 
-  border: 1px solid #8f8f8f;
+    font-family: "Mulish_NH", sans-serif;
+    font-size: 16px;
+    color: #000; 
+    border: 1px solid #8f8f8f;
 }
 
 #contactform_message_193d41d {
-  border: 1px solid #8f8f8f;
-  font-family: "Mulish_NH",sans-serif;
-  font-size: 16px;
-  border: 1px solid #8f8f8f;
+    font-family: "Mulish_NH",sans-serif;
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #8f8f8f;
 }
 
 #contactform_purpose_193d41d {
     border: 1px solid #8f8f8f;
     font-family: "Mulish_NH",sans-serif;
     font-size: 16px;
-    border: 1px solid #8f8f8f;
+    color: #000; 
+    padding: 10px 0 10px 20px;
+    height: calc(3.1875rem + 0rem);
 }
 
 .wpcf7-not-valid-tip {
@@ -63,37 +65,37 @@ select.form-control {
 
 /*begin font header menu*/
 .pix-dropdown-title {
-  font-family: "Mulish_NH", Sans-serif;
+    font-family: "Mulish_NH", Sans-serif;
 }
 /*end*/
 
 /*begin heder font btn*/
 .btn-custom span {
-  font-family: "Mulish_NH", Sans-serif;
+    font-family: "Mulish_NH", Sans-serif;
 }
 /*end*/
 
 /*begin post title font size*/
 h1.cus-title-post {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 #pix-entry-content {
   /* font-size: ; */
-  font-family: "Mulish_NH", Sans-serif;
-  text-align: justify;
+    font-family: "Mulish_NH", Sans-serif;
+    text-align: justify;
 }
 h2.wp-block-heading {
-  font-size: 30px;
-  font-weight: bold;
-}
+    font-size: 30px;
+    font-weight: bold;
+    }
 h3.wp-block-heading {
-  font-size: 28px;
-  font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
 }
 .wp-block-image {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*end post title font size*/
 
@@ -237,8 +239,8 @@ h3.wp-block-heading {
     min-height: 70px;
 }
 .elementor-posts .elementor-post__title {
-  font-size: 18px;
-  word-break: break-word;
+    font-size: 18px;
+    word-break: break-word;
 }
 /* End Customize Post With Elementor*/
 /*end post liên quan*/

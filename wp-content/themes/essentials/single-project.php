@@ -112,7 +112,11 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
                             get_template_part( 'template-parts/content', 'post-normal' );
                             break;
                         default:
-                            get_template_part( 'template-parts/content', 'project' );
+                            if(ICL_LANGUAGE_CODE == 'en') {
+                                get_template_part( 'template-parts/content', 'project-en' );
+                            } else {
+                                get_template_part( 'template-parts/content', 'project-vi' );
+                            }
                     }
                 }elseif (get_post_type() == 'elementor_library') {
                     // Elementor template page
@@ -146,10 +150,25 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
 			?>
         </div>
 
-<!-- Begin Post related -->
+        <!-- Begin Change Language -->
+        <?php 
+        if( ICL_LANGUAGE_CODE == 'en' )
+            { 
+              $lbTitlePostOther ='Get the most recent articles';
+              $lbSeeDetail = 'View more';
+            }
+          else
+            {
+              $lbTitlePostOther ='Bài viết liên quan';
+              $lbSeeDetail = 'Xem chi tiết';
+            }
+        ?>
+        <!-- End Change Language -->
+
+        <!-- Begin Post related -->
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
-                    <h2 class="nguyenhanh-project_related_heading">Bài viết liên quan</h2> 
+                    <h2 class="nguyenhanh-project_related_heading"><?php echo $lbTitlePostOther ?></h2> 
                 </div>
                 <?php
                     $html = '';
@@ -164,7 +183,10 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
                                     $html .= '<article class="nguyenhanh_project-related-article" >';
                                     //
                                     $projectId = get_the_ID();
+
                                     $projectTitle = get_the_title();
+                                    $projectTitle_trim = wp_trim_words($projectTitle, 4);// Đặt số từ mong muốn, ví dụ: 30 từ
+
                                     $projectUrl = get_permalink();
                                     $projectAvatar = get_the_post_thumbnail_url();
                                     $projectExcerpt = get_the_excerpt();
@@ -187,8 +209,8 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
                                     //
                                     $html .= '<div class="nguyenhanh_project_related-text">';
                                     $html .= '<h3 class="nguyenhanh_project_related-title">';
-                                    $html .= '<a href="'.$projectUrl.'" alt="'.$projectTitle.'" title="'.$projectTitle.'">';
-                                    $html .= $projectTitle;
+                                    $html .= '<a href="'.$projectUrl.'" alt="'.$projectTitle_trim.'" title="'.$projectTitle_trim.'">';
+                                    $html .= $projectTitle_trim;
                                     $html .= '</h3>';
                                     $html .= '</a>';
                                     //
@@ -204,7 +226,7 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
                                     $html .= '</p>';
                                     $html .= '</div>';
                                     $html .= '<a class="nguyenhanh-project_related-read-more" href="'.$projectUrl.'" alt="'.$projectTitle.'" title="'.$projectTitle.'">';
-                                    $html .= 'Xem thêm';
+                                    $html .= $lbSeeDetail;
                                     $html .= '</a>';
                                     $html .= '</div>';
                                     //
@@ -224,3 +246,4 @@ if(get_post_type()=='project' && !empty(pix_get_option('blog-full-width-layout')
 </div>
 <?php
 get_footer();
+           
