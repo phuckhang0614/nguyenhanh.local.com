@@ -150,13 +150,13 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
         <?php 
         if( ICL_LANGUAGE_CODE == 'en' )
             { 
-              $lbTitlePostOther ='Get the most recent news';
-              $lbSeeDetail = 'View more';
+                $lbTitlePostOther ='Get the most recent news';
+                $lbSeeDetail = 'View more';
             }
-          else
+        else
             {
-              $lbTitlePostOther ='Bài viết liên quan';
-              $lbSeeDetail = 'Xem chi tiết';
+                $lbTitlePostOther ='Bài viết liên quan';
+                $lbSeeDetail = 'Xem chi tiết';
             }
         ?>
         <!-- End Change Language -->
@@ -243,7 +243,6 @@ if(get_post_type()=='post' && !empty(pix_get_option('blog-full-width-layout'))){
                 ?>
             </div>
         <!-- End Post content -->
-
     </div>
 </div>
 <?php
